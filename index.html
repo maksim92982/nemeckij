@@ -7,49 +7,7 @@
   <meta name="description" content="Индивидуальные занятия и курсы немецкого языка. 20 лет опыта жизни в Германии." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    :root{
-      --bg:#ffffff;
-      --text:#111213;
-      --muted:#5a5f66;
-      --accent:#0d6efd;
-      --accent-contrast:#ffffff;
-      --border:#e6e8eb;
-      --max:1120px;
-      --pad:24px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,sans-serif;line-height:1.6}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--border)}
-    nav{max-width:var(--max);margin:0 auto;padding:12px var(--pad);display:flex;align-items:center;gap:16px}
-    nav h1{margin:0;font-size:18px;font-weight:700;letter-spacing:.2px}
-    ul[role="menubar"]{list-style:none;margin:0 0 0 auto;padding:0;display:flex;gap:14px;align-items:center}
-    ul[role="menubar"] li{margin:0}
-    .btn{display:inline-block;padding:10px 14px;border-radius:8px;border:1px solid var(--border);background:#fff;color:#111;font-weight:600}
-    .btn--accent{background:var(--accent);color:var(--accent-contrast);border-color:var(--accent)}
-    main{max-width:var(--max);margin:0 auto;padding:32px var(--pad)}
-    section{padding:56px 0;border-bottom:1px solid var(--border)}
-    section:last-of-type{border-bottom:none}
-    .grid-two{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
-    figure{margin:0}
-    figure img{width:100%;height:auto;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.08)}
-    h2{font-size:32px;line-height:1.25;margin:0 0 12px}
-    p{margin:0 0 14px;color:var(--text)}
-    .muted{color:var(--muted)}
-    .stack{display:grid;gap:10px}
-    .list{padding-left:18px;margin:10px 0}
-    .list li{margin:6px 0}
-    footer{border-top:1px solid var(--border);padding:28px var(--pad);color:var(--muted)}
-    footer section{border:0;padding:0}
-    /* Responsive */
-    @media (max-width: 900px){
-      .grid-two{grid-template-columns:1fr;gap:20px}
-      nav h1{font-size:16px}
-      section{padding:40px 0}
-    }
-  </style>
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <header>
@@ -73,84 +31,24 @@
           <h2 id="hero-title">Преодолеваем языковой барьер вместе</h2>
           <p class="muted">Индивидуальные занятия и курсы немецкого языка с практической ориентацией. Опыт жизни в Германии — более 20 лет.</p>
           <p>
-            <a class="btn btn--accent" href="#contact">Записаться на консультацию</a>
-            <a class="btn" href="#courses">Посмотреть курсы</a>
+            <a class="btn btn--accent" href="/contact.html">Записаться на консультацию</a>
+            <a class="btn" href="/courses.html">Посмотреть курсы</a>
           </p>
         </section>
         <figure>
-          <img src="portrait.jpg" alt="Ваше фото. Поместите файл portrait.jpg рядом с этой страницей." />
+          <img src="/portrait.jpg" alt="Ваше фото. Поместите файл portrait.jpg в корень репозитория." />
         </figure>
       </article>
     </section>
-
-    <section id="individual" aria-labelledby="ind-title">
-      <header class="stack">
-        <h2 id="ind-title">Индивидуальное обучение</h2>
-        <p class="muted">Персональный план и занятия один на один — для быстрого прогресса под ваши задачи.</p>
-      </header>
-      <article class="stack">
-        <p>На занятиях мы фокусируемся на ваших целях: переезд, работа, интервью, учёба, интеграция. Отбор материалов и сценариев — под реальное общение.</p>
-        <p>Формат: 60–90 минут онлайн или офлайн. Домашние задания с обратной связью, отработка речи, сценарии общения, словарь и грамматика — только то, что пригодится.</p>
-      </article>
-    </section>
-
-    <section id="courses" aria-labelledby="courses-title">
-      <header class="stack">
-        <h2 id="courses-title">Курсы</h2>
-        <p class="muted">Структурированные программы с практикой и поддержкой.</p>
-      </header>
-      <article class="stack">
-        <p>Например, за 4–6 недель вы полностью освоите необходимую лексику и грамматику для выбранной ситуации.</p>
-        <p><strong>2. Чёткая структура и продуманная программа</strong><br />Каждый курс — это готовая «дорожная карта» с последовательными уроками. Вы точно знаете, чему научитесь к концу программы, и видите свой прогресс от занятия к занятию. Никакой воды, только практические знания.</p>
-        <p><strong>3. Экономия времени и денег</strong><br />Вы получаете выверенный материал по цене ниже, чем индивидуальные уроки. Вам не нужно самостоятельно искать ресурсы и строить план — я уже сделал эту работу за вас, отобрав самое важное и полезное.</p>
-        <p><strong>4. Поддержка единомышленников</strong><br />Часто курсы проходят в мини‑группах или включают общие чаты, где вы можете общаться с другими учениками. Это создаёт поддерживающую среду и даёт дополнительную мотивацию.</p>
-        <p><strong>5. Практическая ориентация с первого дня</strong><br />Все материалы курсов созданы на основе моего 20‑летнего опыта жизни в Германии. Вы учите не абстрактные правила, а язык, который сразу сможете применить в реальной жизни.</p>
-        <h3 class="muted" style="margin-top:10px">Кому идеально подойдёт формат?</h3>
-        <ul class="list">
-          <li>Целеустремлённым ученикам, которые хотят решить конкретную задачу в ограниченные сроки.</li>
-          <li>Тем, кто предпочитает чёткий план и структуру.</li>
-          <li>Тем, кто ищет оптимальное соотношение цены и качества.</li>
-          <li>Ученикам с ограниченным бюджетом, но большим желанием учиться у эксперта.</li>
-        </ul>
-        <p>Хотите узнать подробности о текущих и планируемых курсах? Оставьте заявку, и я вышлю вам программы и информацию о старте ближайших групп.</p>
-        <p><a class="btn btn--accent" href="#contact">Оставить заявку</a></p>
-      </article>
-    </section>
-
-    <section id="about" aria-labelledby="about-title">
-      <header class="stack">
-        <h2 id="about-title">Обо мне</h2>
-      </header>
-      <article class="stack">
-        <p><strong>Преодолеваем языковой барьер вместе</strong><br />Меня зовут Алексей. Я более 20 лет живу в Германии, но прекрасно помню, каково это — учить язык в новой стране. Мой диплом лингвиста и преподавателя из российского вуза дал теорию, а жизнь и работа в Германии (включая образование в сфере менеджмента) — живой, настоящий язык.</p>
-        <p>Недостаточно просто выучить слова и правила — важно понимать, как и когда их использовать. Почему немцы говорят ту или иную фразу? Какой смысл скрыт за, казалось бы, простыми словами? Именно это превращает заученные фразы в свободную и уверенную речь.</p>
-        <p>На моих уроках вы заговорите легко и без стеснения. Я научу не только грамматике, но и тому, как думают носители языка. Разбираем примеры из реальной жизни, фильмов и прессы.</p>
-        <p>Если вы хотите говорить по‑немецки так, чтобы вас не только понимали, но и воспринимали как своего — вы по адресу. Давайте начнём!</p>
-      </article>
-    </section>
-
-    <section id="contact" aria-labelledby="contact-title">
-      <header class="stack">
-        <h2 id="contact-title">Контакты</h2>
-        <p class="muted">Оставьте заявку — я свяжусь с вами и помогу выбрать формат обучения.</p>
-      </header>
-      <article class="stack" aria-label="Контактные данные">
-        <p><strong>Телефон:</strong> +7 900 000‑00‑00</p>
-        <p><strong>E‑mail:</strong> info@example.com</p>
-        <p>
-          <a class="btn btn--accent" href="mailto:info@example.com?subject=Заявка%20на%20обучение">Написать письмо</a>
-          <a class="btn" href="tel:+79000000000">Позвонить</a>
-        </p>
-      </article>
-    </section>
-
-    <section id="login" aria-labelledby="login-title">
-      <header class="stack">
-        <h2 id="login-title">Личный кабинет</h2>
-      </header>
-      <article class="stack">
-        <p class="muted">Раздел в разработке. Здесь будут материалы уроков, домашние задания и прогресс.</p>
-      </article>
+    <section aria-labelledby="links">
+      <h2 id="links">Разделы</h2>
+      <p>
+        <a class="btn" href="/individual.html">Индивидуальное обучение</a>
+        <a class="btn" href="/courses.html">Курсы</a>
+        <a class="btn" href="/about.html">Обо мне</a>
+        <a class="btn" href="/contact.html">Контакты</a>
+        <a class="btn btn--accent" href="/login.html">Личный кабинет</a>
+      </p>
     </section>
   </main>
 
@@ -160,6 +58,7 @@
     </section>
   </footer>
 
+  <script src="/auth.js"></script>
   <script>
     const y = document.getElementById('y');
     if (y) { const d = new Date(); y.textContent = d.getFullYear(); }
