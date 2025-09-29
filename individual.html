@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Индивидуальное обучение — Немецкий с Алексеем</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <nav aria-label="Главное меню">
+      <h1>Немецкий с Алексеем</h1>
+      <ul role="menubar">
+        <li role="none"><a role="menuitem" href="/index.html">Главная</a></li>
+        <li role="none"><a role="menuitem" aria-current="page" href="/individual.html">Индивидуальное обучение</a></li>
+        <li role="none"><a role="menuitem" href="/courses.html">Курсы</a></li>
+        <li role="none"><a role="menuitem" href="/about.html">Обо мне</a></li>
+        <li role="none"><a role="menuitem" href="/contact.html">Контакты</a></li>
+        <li role="none"><a role="menuitem" class="btn btn--accent" href="/login.html">Личный кабинет</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section aria-labelledby="title">
+      <h2 id="title">Индивидуальное обучение</h2>
+      <p class="muted">Персональный план и занятия один на один — для быстрого прогресса под ваши задачи.</p>
+      <p>На занятиях мы фокусируемся на ваших целях: переезд, работа, интервью, учёба, интеграция. Отбор материалов и сценариев — под реальное общение.</p>
+      <p>Формат: 60–90 минут онлайн или офлайн. Домашние задания с обратной связью, отработка речи, сценарии общения, словарь и грамматика — только то, что пригодится.</p>
+    </section>
+  </main>
+  <footer>
+    <section><p>© <span id="y"></span> Немецкий с Алексеем</p></section>
+  </footer>
+  <script src="/auth.js"></script>
+  <script>const y=document.getElementById('y'); if(y){y.textContent=new Date().getFullYear()}</script>
+</body>
+</html>
+
+

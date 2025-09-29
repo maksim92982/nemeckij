@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Контакты — Немецкий с Алексеем</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <nav aria-label="Главное меню">
+      <h1>Немецкий с Алексеем</h1>
+      <ul role="menubar">
+        <li role="none"><a role="menuitem" href="/index.html">Главная</a></li>
+        <li role="none"><a role="menuitem" href="/individual.html">Индивидуальное обучение</a></li>
+        <li role="none"><a role="menuitem" href="/courses.html">Курсы</a></li>
+        <li role="none"><a role="menuitem" href="/about.html">Обо мне</a></li>
+        <li role="none"><a role="menuitem" aria-current="page" href="/contact.html">Контакты</a></li>
+        <li role="none"><a role="menuitem" class="btn btn--accent" href="/login.html">Личный кабинет</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section aria-labelledby="title">
+      <h2 id="title">Контакты</h2>
+      <p class="muted">Оставьте заявку — я свяжусь с вами и помогу выбрать формат обучения.</p>
+      <p><strong>Телефон:</strong> +7 900 000‑00‑00</p>
+      <p><strong>E‑mail:</strong> <a href="mailto:info@example.com">info@example.com</a></p>
+      <form action="mailto:info@example.com" method="post" enctype="text/plain">
+        <label for="name">Имя</label>
+        <input id="name" name="name" type="text" required />
+        <label for="email">E‑mail</label>
+        <input id="email" name="email" type="email" required />
+        <label for="msg">Сообщение</label>
+        <input id="msg" name="message" type="text" />
+        <button class="btn btn--accent" type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <section><p>© <span id="y"></span> Немецкий с Алексеем</p></section>
+  </footer>
+  <script src="/auth.js"></script>
+  <script>const y=document.getElementById('y'); if(y){y.textContent=new Date().getFullYear()}</script>
+</body>
+</html>
+
+

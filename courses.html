@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Курсы — Немецкий с Алексеем</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <nav aria-label="Главное меню">
+      <h1>Немецкий с Алексеем</h1>
+      <ul role="menubar">
+        <li role="none"><a role="menuitem" href="/index.html">Главная</a></li>
+        <li role="none"><a role="menuitem" href="/individual.html">Индивидуальное обучение</a></li>
+        <li role="none"><a role="menuitem" aria-current="page" href="/courses.html">Курсы</a></li>
+        <li role="none"><a role="menuitem" href="/about.html">Обо мне</a></li>
+        <li role="none"><a role="menuitem" href="/contact.html">Контакты</a></li>
+        <li role="none"><a role="menuitem" class="btn btn--accent" href="/login.html">Личный кабинет</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section aria-labelledby="title">
+      <h2 id="title">Курсы</h2>
+      <p>Например, за 4–6 недель вы полностью освоите необходимую лексику и грамматику для выбранной ситуации.</p>
+      <p><strong>2. Чёткая структура и продуманная программа</strong><br />Каждый курс — это готовая «дорожная карта» с последовательными уроками. Вы точно знаете, чему научитесь к концу программы, и видите свой прогресс от занятия к занятию. Никакой воды, только практические знания.</p>
+      <p><strong>3. Экономия времени и денег</strong><br />Вы получаете выверенный материал по цене ниже, чем индивидуальные уроки. Вам не нужно самостоятельно искать ресурсы и строить план — я уже сделал эту работу за вас, отобрав самое важное и полезное.</p>
+      <p><strong>4. Поддержка единомышленников</strong><br />Часто курсы проходят в мини‑группах или включают общие чаты, где вы можете общаться с другими учениками. Это создаёт поддерживающую среду и даёт дополнительную мотивацию.</p>
+      <p><strong>5. Практическая ориентация с первого дня</strong><br />Все материалы курсов созданы на основе моего 20‑летнего опыта жизни в Германии. Вы учите не абстрактные правила, а язык, который сразу сможете применить в реальной жизни.</p>
+      <h3 class="muted" style="margin-top:10px">Кому идеально подойдёт формат?</h3>
+      <ul class="list">
+        <li>Целеустремлённым ученикам, которые хотят решить конкретную задачу в ограниченные сроки.</li>
+        <li>Тем, кто предпочитает чёткий план и структуру.</li>
+        <li>Тем, кто ищет оптимальное соотношение цены и качества.</li>
+        <li>Ученикам с ограниченным бюджетом, но большим желанием учиться у эксперта.</li>
+      </ul>
+      <p>Хотите узнать подробности о текущих и планируемых курсах? Оставьте заявку, и я вышлю вам программы и информацию о старте ближайших групп.</p>
+      <p><a class="btn btn--accent" href="/contact.html">Оставить заявку</a></p>
+    </section>
+  </main>
+  <footer>
+    <section><p>© <span id="y"></span> Немецкий с Алексеем</p></section>
+  </footer>
+  <script src="/auth.js"></script>
+  <script>const y=document.getElementById('y'); if(y){y.textContent=new Date().getFullYear()}</script>
+</body>
+<!-- Курсы страница -->
+</html>
+
+

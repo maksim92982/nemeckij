@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Обо мне — Немецкий с Алексеем</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <nav aria-label="Главное меню">
+      <h1>Немецкий с Алексеем</h1>
+      <ul role="menubar">
+        <li role="none"><a role="menuitem" href="/index.html">Главная</a></li>
+        <li role="none"><a role="menuitem" href="/individual.html">Индивидуальное обучение</a></li>
+        <li role="none"><a role="menuitem" href="/courses.html">Курсы</a></li>
+        <li role="none"><a role="menuitem" aria-current="page" href="/about.html">Обо мне</a></li>
+        <li role="none"><a role="menuitem" href="/contact.html">Контакты</a></li>
+        <li role="none"><a role="menuitem" class="btn btn--accent" href="/login.html">Личный кабинет</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section aria-labelledby="title">
+      <h2 id="title">Обо мне</h2>
+      <p><strong>Преодолеваем языковой барьер вместе</strong><br />Меня зовут Алексей. Я более 20 лет живу в Германии, но я прекрасно помню, каково это — учить язык в новой стране. Мой диплом лингвиста и преподавателя из российского ВУЗа дал мне прочную теоретическую базу, а жизнь и работа в Германии (включая полученное здесь образование в сфере менеджмента) открыли мир живого, настоящего языка.</p>
+      <p>Я знаю, что недостаточно просто выучить слова и правила. Важно понимать, как и когда их использовать. Почему немцы говорят ту или иную фразу? Какой смысл скрыт за, казалось бы, простыми словами? Именно эти знания превращают заученные фразы в свободную и уверенную речь.</p>
+      <p>На моих уроках мы сфокусируемся на том, чтобы Вы заговорили легко и без стеснения. Я научу Вас не только грамматике, но и тому, как думают носители языка. Мы будем разбирать примеры из реальной жизни, фильмов и прессы.</p>
+      <p>Если Вы хотите говорить на немецком так, чтобы Вас не только понимали, но и воспринимали как своего, — вы обратились по адресу. Давайте начнем!</p>
+    </section>
+  </main>
+  <footer>
+    <section><p>© <span id="y"></span> Немецкий с Алексеем</p></section>
+  </footer>
+  <script src="/auth.js"></script>
+  <script>const y=document.getElementById('y'); if(y){y.textContent=new Date().getFullYear()}</script>
+</body>
+</html>
+
+

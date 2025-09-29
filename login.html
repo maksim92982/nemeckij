@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Вход — Немецкий с Алексеем</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <nav aria-label="Главное меню">
+      <h1>Немецкий с Алексеем</h1>
+      <ul role="menubar">
+        <li role="none"><a role="menuitem" href="/index.html">Главная</a></li>
+        <li role="none"><a role="menuitem" href="/individual.html">Индивидуальное обучение</a></li>
+        <li role="none"><a role="menuitem" href="/courses.html">Курсы</a></li>
+        <li role="none"><a role="menuitem" href="/about.html">Обо мне</a></li>
+        <li role="none"><a role="menuitem" href="/contact.html">Контакты</a></li>
+        <li role="none"><a role="menuitem" class="btn btn--accent" aria-current="page" href="/login.html">Личный кабинет</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section aria-labelledby="title">
+      <h2 id="title">Вход в личный кабинет</h2>
+      <form id="loginForm" autocomplete="off">
+        <label for="login">Логин</label>
+        <input id="login" type="text" required />
+        <label for="pass">Пароль</label>
+        <input id="pass" type="password" required />
+        <button class="btn btn--accent" type="submit">Войти</button>
+        <p id="err" class="muted" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <section><p>© <span id="y"></span> Немецкий с Алексеем</p></section>
+  </footer>
+  <script src="/auth.js"></script>
+  <script>
+    const y=document.getElementById('y'); if(y){y.textContent=new Date().getFullYear()}
+    if(window.AppAuth && window.AppAuth.isAuthed()){
+      location.replace('/cabinet.html');
+    }
+    const form=document.getElementById('loginForm');
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      const ok = window.AppAuth.login(
+        document.getElementById('login').value.trim(),
+        document.getElementById('pass').value.trim()
+      );
+      if(ok){ location.replace('/cabinet.html'); }
+      else{ document.getElementById('err').textContent='Неверный логин или пароль'; }
+    });
+  </script>
+</body>
+</html>
+
+
